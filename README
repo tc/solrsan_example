@@ -1,28 +1,9 @@
 Solrsan Example Rails application
 --
+@tommychheng
 
-## HOWTO
-Install Jetty
-wget http://download.eclipse.org/jetty/stable-7/dist/jetty-distribution-7.3.0.v20110203.tar.gz
-tar -zxvf jetty-distribution-*.tar.gz
-rm jetty-distribution-*.tar.gz
-mv jetty-distribution-* /usr/local
-ln -s jetty-distribution-* jetty
+This sample rails project has a model named Document which includes the solrsan search module.
 
-Install solr
-wget http://www.ecoficial.com/apachemirror/lucene/solr/1.4.1/apache-solr-1.4.1.tgz
-tar -zxvf apache-solr-*.tgz
-cd apache-solr-*
-cp dist/apache-solr-*.war /usr/local/jetty/webapps/solr.war
+See https://github.com/tc/solrsan for installation instructions
 
-Create solr configuration files using:
-  rails generate solrsan:config
-
-The generator will copy the following files into your application.
-  config/solr.yml
-  config/solr
-  config/initializers/solrsan.rb
-  lib/tasks/solr.rake
-
-Edit the config/solr.yml for your directory paths.
-
+See https://github.com/tc/solrsan/blob/master/test/unit/search_test.rb for more example queries.
