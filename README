@@ -2,8 +2,8 @@ Solrsan Example Rails application
 --
 @tommychheng
 
-This sample rails project has a model named Document which includes the solrsan search module.
+This sample rails project uses the solrsan gem for searching. It has a model named Document which includes the solrsan search module.
 
-See https://github.com/tc/solrsan for installation instructions
+See https://github.com/tc/solrsan for gem installation instructions
 
 See https://github.com/tc/solrsan/blob/master/test/unit/search_test.rb for more example queries.
